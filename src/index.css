@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1 {
+        @apply font-Nunito font-semibold text-center text-blackB leading-[120%]
+        text-[24px] sm:text-[36px] md:text-[44px]
+    }
+
+    h2 {
+        @apply font-Nunito font-black text-center text-whiteB
+        text-[24px] sm:text-[36px]
+    }
+
+    h3 {
+        @apply font-Nunito font-extrabold text-blackB
+        text-[18px] md:text-[36px]
+    }
+
+    h4 {
+        @apply font-Nunito font-extrabold 
+        text-[20px] md:text-[28px]
+    }
+
+    h5 {
+        @apply font-Nunito font-extrabold
+        text-[16px] sm:text-[18px] md:text-[22px]
+    }
+
+    h1 > span {
+        @apply font-black
+    }
+
+}
+
+@layer components {
+
+    .p2 {
+        @apply font-Nunito leading-[130%] text-blackB
+        text-[18px] md:text-[28px]
+    }
+
+    .p3 {
+        @apply font-Nunito leading-[130%] text-blackB
+        text-[16px] sm:text-[24px]
+    }
+
+    .p5    {
+        @apply font-Nunito leading-[130%]
+        text-[16px] sm:text-[18px] md:text-[22px]
+    }
+
+}
+
+@layer utilities {
+
+    .ContainerOptmiza {
+        @apply w-[92%] mx-auto max-w-[1062px] 2xl:w-full 
+        !text-whiteB text-center
+        py-[65px] sm:py-[68px] md:py-[94px]
+    }
+
+    .ContainerFunciona {
+        @apply w-[90%] mx-auto max-w-[828px] lg:w-full grid
+        gap-[36px] pt-[44px] pb-[108px]
+        sm:gap-[16px] sm:py-[42px] sm:w-[80%]
+        lg:gap-[53px] md:pt-[84px] md:pb-[90px]
+    }
+
+    .ContainerBeneficios {
+        @apply w-[76%] mx-auto max-w-[940px] lg:w-full grid
+        gap-[44px] py-[64px]
+        lg:gap-[54px] lg:py-[80px]
+    }
+
+    .ContainerPreguntas {
+        @apply w-[76%] mx-auto max-w-[774px] lg:w-full grid
+        pt-[40px] pb-[52px] gap-[16px]
+        sm:pb-[62px] sm:gap-[44px] sm:w-[74%]
+        lg:pt-[44px] lg:pb-[72px]
+    }
+
+    .ContainerSomos {
+        @apply w-[90%] mx-auto max-w-[1021px] xl:w-full grid
+        gap-[32px] py-[30px] 
+        sm:gap-[36px] sm:py-[58px]
+        lg:gap-[54px]
+    }
+
+    .ContainerApoyar {
+        @apply w-[90%] mx-auto max-w-[1021px] xl:w-full grid
+        gap-[32px] pt-[64px]
+        sm:gap-[80px]
+        lg:gap-0 lg:pb-[24px]
+    }
+
+}
